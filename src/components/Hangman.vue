@@ -3,7 +3,7 @@
     <nav class="nav">
       <div class="nav-left">
         <a style="cursor: default;">{{ $t('messages.score') }}: {{ score }}</a>
-        <a style="cursor: default;">{{ $t('messages.topScore') }}: {{ topScore() }}</a>
+        <a style="cursor: default;">{{ $t('messages.topScore') }}: {{ topScore }}</a>
       </div>
       <div class="nav-center">
         <h1 style="cursor: default;" class="text-primary">Hangman</h1>
@@ -158,7 +158,7 @@ export default {
         "vitre", "chanter", "chercher", "choisir", "chuchoter", "coller", "colorier",
         "commencer", "comparer", "compter", "construire", "continuer", "copier",
         "couper", "déchirer", "décoller", "décorer", "découper", "demander", "démolir",
-        "se dépêcher", "dessiner", "dire", "discuter", "écouter", "écrire", "effacer",
+        "dessiner", "dire", "discuter", "écouter", "écrire", "effacer",
         "entendre", "entourer", "envoyer", "faire", "finir", "fouiller", "goûter",
         "imiter", "laisser", "lire", "mettre", "montrer", "parler",
         "peindre", "plier", "poser", "prendre", "préparer", "ranger", "réciter",
@@ -197,7 +197,8 @@ export default {
         guessArray: [],
         info: '',
         output: '',
-        score: 0
+        score: 0,
+        topScore: 0
     }
   },
   computed: {
@@ -214,18 +215,20 @@ export default {
   watch: {
     score (newValue) {
       if (newValue > store.get('topScore')) {
+        this.topScore = newValue
         store.set('topScore', newValue)
       }
     }
   },
   mounted () {
     document.body.onkeypress = this.getKeystrokeEvent
+    if (!store.has('topScore')) {
+      store.set('topScore', 0)
+    }
+    this.topScore = store.get('topScore')
     this.initialize()
   },
   methods: {
-    topScore () {
-      return store.get('topScore')
-    },
     locale (locale) {
       this.$i18n.locale = locale
       this.initialize()
