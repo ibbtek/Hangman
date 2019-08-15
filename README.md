@@ -31,8 +31,8 @@ $ npm run electron:build
 ```shell
 $ chmod +x run_wine.sh
 $ ./run_wine.sh
-# npm install
-# npm run electron:build-win
+$ npm install
+$ npm run electron:build-win
 ```
 
 If you are on another platform than Linux, check the [docs](https://github.com/electron-userland/electron-builder)

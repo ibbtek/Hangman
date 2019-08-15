@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "electron:build": "vue-cli-service electron:build",
-    "electron:build-win": "vue-cli-service electron:build --windows",
     "electron:generate-icons": "electron-icon-builder --input=./public/icon.png --output=build --flatten",
+    "electron:build": "rm -f dist_electron/*.AppImage && rm -f dist_electron/*.snap && vue-cli-service electron:build",
+    "electron:build-win": "rm -f dist_electron/*.exe && rm -f dist_electron/*.blockmap && vue-cli-service electron:build --windows",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"

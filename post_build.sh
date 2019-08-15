@@ -1,0 +1,1 @@
+for file in dist_electron/*.exe; do mv "$file" `echo $file | tr ' ' '-'` ; done && sudo chown -R $USER .

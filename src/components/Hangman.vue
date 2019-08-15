@@ -64,7 +64,7 @@
     </div>
     <footer class="is-center">
       <small>&copy; {{ getCurrentYear }}
-        <a target="_blank" href="http://ibbtek.altervista.org">
+        <a target="_blank" href="https://ibbtek.github.io/">
           Ibbtek
         </a>
       </small>
