@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Ibbtek
-windows: /ibbtek/Hangman/releases/download/v1.0.0/hangman-Setup-1.0.0.exe
-linux: /ibbtek/Hangman/releases/download/v1.0.0/hangman-1.0.0.AppImage
+windows: https://github.com/ibbtek/Hangman/releases/download/v1.0.0/hangman-Setup-1.0.0.exe
+linux: https://github.com/ibbtek/Hangman/releases/download/v1.0.0/hangman-1.0.0.AppImage
 ---
 # Screenshot
 ![screenshot](img/hangmanScreenshot.png)
