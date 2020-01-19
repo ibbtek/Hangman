@@ -1,8 +1,8 @@
 ---
 layout: default
-title: n-oma-d
-windows: https://github.com/n-oma-d/Hangman/releases/download/v1.0.0/hangman-Setup-1.0.0.exe
-linux: https://github.com/n-oma-d/Hangman/releases/download/v1.0.0/hangman-1.0.0.AppImage
+title: nomadigital
+windows: https://github.com/nomadigital/Hangman/releases/download/v1.0.0/hangman-Setup-1.0.0.exe
+linux: https://github.com/nomadigital/Hangman/releases/download/v1.0.0/hangman-1.0.0.AppImage
 ---
 # Screenshot
 ![screenshot](img/hangmanScreenshot.png)
