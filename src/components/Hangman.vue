@@ -37,8 +37,8 @@
     </div>
     <footer class="is-center">
       <small>&copy; {{ getCurrentYear }}
-        <a target="_blank" href="https://ibbtek.github.io/">
-          Ibbtek
+        <a target="_blank" href="https://nomadigital.github.io/">
+          nomadigital
         </a>
       </small>
     </footer>
