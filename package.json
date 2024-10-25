@@ -16,7 +16,7 @@
   "main": "background.js",
   "dependencies": {
     "electron-store": "^4.0.0",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-i18n": "^8.14.0"
   },
   "devDependencies": {
